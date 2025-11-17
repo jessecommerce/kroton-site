@@ -1,0 +1,110 @@
+/* ----------------------------------------
+   GLOBAL RESET
+---------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* ----------------------------------------
+   PAGE BACKGROUND + FEEL
+---------------------------------------- */
+body {
+  background: #0c0c0c;
+  color: #ffffff;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+/* ----------------------------------------
+   MAIN LOGO CONTAINER
+---------------------------------------- */
+.logo-wrapper {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.logo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 25px rgba(255,255,255,0.25));
+  transition: 0.5s ease;
+}
+
+/* Subtle breathing animation */
+.logo-wrapper img:hover {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 40px rgba(255,255,255,0.35));
+}
+
+/* ----------------------------------------
+   TITLE / TAGLINE
+---------------------------------------- */
+h1 {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 18px;
+  opacity: 0.75;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ----------------------------------------
+   SEARCH BAR
+---------------------------------------- */
+.search-box {
+  width: 80%;
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  transition: border 0.3s ease;
+}
+
+.search-box:focus-within {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.search-box input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  letter-spacing: .25px;
+}
+
+.search-box input::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+/* ----------------------------------------
+   SPACER / FOOTER
+---------------------------------------- */
+footer {
+  margin-top: auto;
+  padding: 35px;
+  font-size: 14px;
+  opacity: 0.5;
+  text-align: center;
+}
